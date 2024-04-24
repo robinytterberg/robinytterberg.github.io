@@ -1,3 +1,91 @@
-h1 {
-  color:red;
+body {
+	background-color:#000310;
+	color: #fff;
+	font-family: arial;
+	padding: 0 200px  0 200px;
 }
+
+.logo {
+	width:200px;
+	float:left;
+}
+
+.nav-bar {
+	list-style-type: none;
+	color: #7b82e7;
+	float:right;
+	margin-top: 10px;
+}
+
+#nav-link {
+	color: #7b82e7;
+	text-decoration: none;
+	font-size:24px;
+	margin-right: 100px;
+}
+
+#hero-section {
+	background-image: url("main.jpg");
+}
+
+.text-wrapper {
+	width:40%;
+	float:left;
+}
+
+.img-wrapper {
+	width:40%;
+	float: right;
+	margin-top:50px;
+}
+
+#main-img {
+	min-width:500px;
+}
+
+h1 {
+	font-size:76px;
+	text-transform: uppercase;
+	font-family: arial;
+	font-weight: 900;
+	line-height: 110%;
+}
+
+p {
+	font-size: 32px;
+	line-height: 160%;
+	margin-bottom: 60px;
+}
+
+.p-left {
+	text-align: justify;
+}
+
+button {
+	background-color:#7b82e7;
+	padding:10px 30px 10px 30px;
+	font-size:28px;
+	text-transform: uppercase;
+	border-radius: 20px;
+}
+
+}
+
+.container {
+	margin-top: 50px;
+}
+
+#main-about {
+	background-color: #7b82e7;
+	clear: both;
+	
+}
+
+h2 {
+	font-size:48px;
+	text-transform: uppercase;
+	font-family: arial;
+	font-weight: 900;
+	line-height: 110%;
+}
+
