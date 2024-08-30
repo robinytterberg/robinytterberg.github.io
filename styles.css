@@ -1,0 +1,368 @@
+/* Grundläggande stilar */
+body {
+    font-family: "Jost", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+    line-height: 1.2;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #000D1C;
+    color: white;
+}
+
+video {
+  object-fit: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+}
+.video-wrapper {
+  position: relative;
+  overflow: hidden;
+  margin-bottom: 100px;
+}
+
+/* Header-stilar */
+header {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 20px;
+    position: relative;
+}
+
+.logo {
+    height: 50px;
+}
+
+.menu-toggle {
+    display: none;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.menu-icon {
+    width: 30px;
+    height: 2px;
+    background: white;
+    position: relative;
+}
+
+.menu-icon::before,
+.menu-icon::after {
+    content: '';
+    width: 30px;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: 0;
+}
+
+.menu-icon::before {
+    top: -8px;
+}
+
+.menu-icon::after {
+    top: 8px;
+}
+
+/* Navigationsmeny */
+nav {
+    display: flex;
+    justify-content: flex-end;
+    flex: 1;
+    background: rgba(255, 255, 255, 0.0); /* Transparent bakgrund */
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    text-transform:uppercase;
+    font-weight:300;
+}
+
+.contact-button {
+    color:#C3CBA2;
+	font-weight: 400;
+	border:2px solid #C3CBA2;
+	border-radius:50px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+}
+
+/* Hero-sektion */
+.hero {
+    color: white;
+    text-align: center;
+}
+
+.hero-content {
+    max-width: 750px;
+    margin: 0 auto;
+}
+
+.hero h1 {
+    font-size: 66px;
+    margin: 80px 0 40px 0;
+    text-transform:uppercase;
+    color: #000D1C;
+}
+
+.hero p {
+    margin: 0 0 50px;
+}
+
+.cta-button {
+    display: inline-block;
+	color:#000D1C;
+	background-color:#C3CBA2;
+	font-weight: 500;
+	border-radius:50px;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+}
+
+.cta-button:hover {
+    background-color: #0056b3;
+	margin-bottom: 50px;
+}
+
+/* Text och bild-sektion */
+.text-image {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.text-image p {
+    margin: 0 0 20px;
+}
+
+.text-image h2 {
+    font-size: 3em;
+    margin: 0 0 20px;
+    text-transform:uppercase;
+    color: #C3CBA2;
+}
+
+.text-content {
+    flex: 1;
+    padding-right: 20px;
+    max-width: 600px;
+}
+
+.image-content {
+    flex: 1;
+}
+
+.image-content img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Tjänster-sektion */
+.services {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+/* Tjänstekort */
+.service-card {
+    background-color: #022;
+    border-radius: 30px;
+    overflow: hidden; /* Se till att bilden inte går utanför kortets gränser */
+    text-align: center;
+    flex: 1;
+    margin: 10px;
+    min-width: 250px; /* Sätter en minsta bredd på korten */
+    max-width: 600px;
+    padding-bottom: 20px;
+}
+
+.service-image {
+    width: 100%;
+    height: auto;
+    display: block; /* Se till att bilden inte har extra marginaler eller fyllningar */
+}
+
+.service-card h3 {
+    margin: 20px 0 10px; /* Justera marginalerna för rubriken */
+}
+
+.service-card p {
+    margin: 0 0 20px; /* Justera marginalerna för paragrafen */
+}
+
+.service-button {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    color: white;
+    background-color: #007BFF;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.service-button:hover {
+    background-color: #0056b3;
+}
+
+}
+
+/* Footer-stilar */
+footer {
+    display: flex;
+    flex-wrap: wrap;
+margin: auto;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #333;
+    color: white;
+    padding: 20px;
+}
+
+.footer-left {
+    flex: 1;
+}
+
+.footer-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-right nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+}
+
+.footer-right nav ul li {
+    margin-bottom: 10px;
+}
+
+.footer-right nav ul li a {
+    color: white;
+    text-decoration: none;
+}
+
+.social-media {
+    margin-top: 10px;
+}
+
+.social-icon {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-icon img {
+    width: 24px;
+    height: 24px;
+    filter: invert(97%) sepia(6%) saturate(1304%) hue-rotate(16deg) brightness(85%) contrast(88%);
+}
+
+/* Responsiva stilar */
+@media (max-width: 600px) {
+    header {
+        flex-direction: row;
+        align-items: center;
+        position: relative;
+    }
+
+    .menu-toggle {
+        display: block;
+        margin-left: auto; /* Placera hamburgermenyn till höger */
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+        background-color: rgba(255, 255, 255, 0.8); /* Transparent bakgrund */
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav.open {
+        display: flex;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+        text-align: center;
+    }
+
+    .text-image {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .text-content {
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .footer-right {
+        text-align: center;
+    }
+
+    .hero h1 {
+    font-size: 36px;
+	margin: 30px 0 20px 0;
+	}
+	
+	.hero {
+    padding: 10px;
+}
+}
+
+@media (min-width: 601px) and (max-width: 1024px) {
+    .services {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .service-card {
+        margin: 10px 0;
+        max-width: 80%;
+    }
+}
