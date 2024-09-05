@@ -3,7 +3,7 @@ body {
     font-family: "Jost", sans-serif;
     font-weight: 400;
     font-style: normal;
-    font-size: 20px;
+	font-size: 26px;
     line-height: 1.2;
     margin: 0;
     padding: 0;
@@ -101,7 +101,7 @@ nav ul li {
 nav ul li a {
     color: white;
     text-decoration: none;
-    font-size: 14px;
+    font-size: 1.6rem;
     text-transform:uppercase;
     font-weight:300;
 }
@@ -126,14 +126,14 @@ nav ul li a {
 }
 
 .hero-content {
-    max-width: 750px;
+    max-width: 900px;
     margin: 0 auto;
 	position: relative;
 	z-index: 1;
 }
 
 .hero h1 {
-    font-size: 66px;
+    font-size: 4.5rem;
     margin: 80px 0 40px 0;
     text-transform:uppercase;
     color: #000D1C;
@@ -165,10 +165,12 @@ nav ul li a {
 /* Text och bild-sektion */
 .text-image {
     display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 20px;
+	max-width: 1200px;
     flex-wrap: wrap;
+	margin: 0 auto;
 }
 
 .text-image p {
@@ -176,7 +178,7 @@ nav ul li a {
 }
 
 .text-image h2 {
-    font-size: 3em;
+    font-size: 3rem;
     margin: 0 0 20px;
     text-transform:uppercase;
     color: #C3CBA2;
@@ -200,16 +202,35 @@ nav ul li a {
 }
 
 /* Tjänster-sektion */
+
+.services-section {
+    max-width: 1200px;
+    margin: 200px auto; /* Centrera sektionen på sidan */
+    padding: 0 20px; /* Lägg till lite padding för att undvika att innehållet når kanterna */
+}
+.services-heading {
+    text-align: left; /* Gör rubriken vänsterställd */
+    padding-left: 30px; /* Ger ett litet avstånd från marginalen om det behövs */
+	display:flex;
+    font-size: 3rem;
+    margin: 0 0 20px;
+    text-transform:uppercase;
+    color: #C3CBA2;
+}
+
+
 .services {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+	gap: 40px;
     padding: 20px;
+	margin-top: 10px;
 }
 
 /* Tjänstekort */
 .service-card {
-    background-color: #022;
+    background-color: #000D1C;
     border-radius: 30px;
     overflow: hidden; /* Se till att bilden inte går utanför kortets gränser */
     text-align: center;
@@ -231,9 +252,11 @@ nav ul li a {
 }
 
 .service-card p {
-    margin: 0 0 20px; /* Justera marginalerna för paragrafen */
+    margin: 0 20px 20px; /* Justera marginalerna för paragrafen */
+	font-size: 1.6rem;
 }
 
+/** ANVÄNDS INTE I NULÄGET
 .service-button {
     display: inline-block;
     padding: 10px 20px;
@@ -247,36 +270,67 @@ nav ul li a {
 .service-button:hover {
     background-color: #0056b3;
 }
-
-}
+ **/
 
 /* Footer-stilar */
 footer {
     display: flex;
     flex-wrap: wrap;
-margin: auto;
-    justify-content: space-between;
+    margin: 100px auto 10px;
+    justify-content: center;
     align-items: center;
-    background-color: #333;
-    color: white;
+	text-align: center;
+    color: #fff;
     padding: 20px;
+	border-top: 1px solid #C3CBA2;
+	max-width: 1200px;
+}
+
+.footer-left,
+.footer-right {
+	flex: 1 1 300px;
+	display:flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 10px;
+	max-width: 500px;
 }
 
 .footer-left {
     flex: 1;
+	max-width:400px;
+}
+
+.footer-heading {
+	font-size: 1.6rem;
+	color: #C3CBA2;
 }
 
 .footer-right {
     flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    max-width: 600px;
+	flex-direction: column;
+}
+
+.footer-logo {
+	height: 50px;
+	margin-bottom: 20px;
+}
+
+.footer-right nav {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 100%;
 }
 
 .footer-right nav ul {
     list-style: none;
-    padding: 0;
-    margin: 0;
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column;
     text-align: center;
 }
 
@@ -285,7 +339,8 @@ margin: auto;
 }
 
 .footer-right nav ul li a {
-    color: white;
+    color: #C3CBA2;
+	font-weight:400;
     text-decoration: none;
 }
 
@@ -347,13 +402,14 @@ margin: auto;
     }
 
     .text-image {
-        flex-direction: column;
+        flex-direction: column-reverse;
         text-align: center;
+		width: 80vW;
     }
 
     .text-content {
         padding: 0;
-        margin-bottom: 20px;
+        margin: 40px 0;
     }
 
     .footer-right {
