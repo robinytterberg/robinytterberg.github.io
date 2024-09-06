@@ -374,16 +374,16 @@ footer {
 
     nav {
         display: none;
-     /*   position: absolute;
+        position: absolute;
         top: 0px;
         left: 0;
         right: 0;
         background-color: rgba(0, 0, 0, 0.9); 
         flex-direction: column;
         align-items: center;
-		z-indez: 1000;
-		padding: 10;
-		border-radius: 10px; */
+	z-indez: 1000;
+	padding: 10;
+	border-radius: 10px;
     }
 
     nav.open {
